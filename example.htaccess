@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^users$ /index.php?endpoint=users [QSA,L]
+RewriteRule ^users/login$ /index.php?endpoint=users/login [QSA,L]
+RewriteRule ^users/register$ /index.php?endpoint=users/register [QSA,L]
+RewriteRule ^users/(\d+)$ /index.php?endpoint=users/$1 [QSA,L]
